@@ -9,7 +9,7 @@ module.exports = function(connection){
   };
 
   this.showPics = function(cb){
-    getData('SELECT * FROM img', cb );
+    getData('SELECT * FROM img ORDER BY id DESC', cb );
   };
 
   this.insertPic = function (data, cb) {
